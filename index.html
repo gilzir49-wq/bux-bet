@@ -2,8 +2,13 @@
 <title>BET-IT – משחק הניחושים של החבר׳ה</title>
 <meta property="og:title" content="BET-IT – משחק הניחושים של החבר׳ה">
 <meta property="og:description" content="מהמרים על הכדורגל בז׳יטונים וירטואליים – בלי כסף אמיתי ⚽">
-<meta property="og:image" content="https://gilzir49-wq.github.io/bet-it/og.png">
-<meta property="og:url" content="https://gilzir49-wq.github.io/bet-it/">
-<meta http-equiv="refresh" content="0;url=https://gilzir49-wq.github.io/bet-it/">
+<meta property="og:image" content="https://bet-it.web.app/og.png">
+<meta property="og:url" content="https://bet-it.web.app/">
 <style>body{background:#070A14;color:#C6F432;font-family:sans-serif;text-align:center;padding-top:40vh}</style></head>
-<body><script>location.replace('https://gilzir49-wq.github.io/bet-it/'+location.search+location.hash)</script>BET-IT עבר לכתובת חדשה…</body></html>
+<body>BET-IT עבר לכתובת חדשה…
+<script>
+// מעבירים את מפתח המכשיר לכתובת החדשה (בחלק של הכתובת שלא נשלח לשרת)
+var p=new URLSearchParams(); ['bb_sec','bb_ak','bb_pending','bb_q','bb_tab'].forEach(function(k){ try{ var v=localStorage.getItem(k); if(v) p.set(k,v); }catch(e){} });
+var adm=/\/admin\/?$/.test(location.pathname), h=location.hash.replace(/^#/,'');
+location.replace('https://bet-it.web.app'+(adm?'/?admin=1':'/')+'#'+(h?h+'&':'')+'mig='+encodeURIComponent(p.toString()));
+</script></body></html>
